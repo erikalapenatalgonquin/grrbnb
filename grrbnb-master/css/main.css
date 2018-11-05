@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Krub');
+
+
+* {
+    padding: 0.4rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before {
+    box-sizing: content-box;
+}
+
+html {
+    font-size: px;
+    line-height: 2.9;
+    font-family: Krub, "Georgia", sans-serif;
+
+}
+
+span {
+    color: #d7c4b6;
+    font-family: Quicksand, "Georgia", sans-serif;
+    text-shadow: 2px 2px #666699;
+
+}
+
+main {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px #white;
+}
+
+header {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 10rem;
+    padding: 20px;
+    height: 300px;
+    min-height: 10rem;
+    padding: 1rem;
+    background-image: url('../img/photo-1489440543286-a69330151c0b.jpeg');
+}
+
+input#min.price::after {
+    content: "$"attr(data-price);
+    display: block;
+    margin-top: -1.5rem;
+}
+
+input.price#max::after {
+    content: "$"attr(data-price);
+    display: block;
+    margin-top: -1.5rem;
+}
+
+header > h1 > img {
+    position: absolute;
+    display: flex;
+    padding: 0.5rem;
+    float: top left;
+    float: none;
+    height: 10%;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.search-btn {
+
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid #666699;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Krub, "Georgia", sans-serif;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all #666699 0.2s;
+}
+
+p:nth-child(1) {}
+
+p:nth-child(2) {}
+
+p:nth-child(3) {}
+
+p:nth-child(4) {}
+
+.place {
+    color: #666699;
+}
+
+.check-in {
+    color: #666699;
+}
+
+.check-out {
+    color: #666699
+}
+
+.min-price {
+    color: #666699;
+
+}
+
+.max-price {
+    color: #666699;
+}
+
+.dogs {
+    color: #666699;
+}
+
+
+header > h1 {
+    text-align: center;
+    font-size: 4rem;
+    color: #666666;
+
+}
+
+
+
+
+/************************************************  
+            MEDIA QUERIES for layout
+************************************************/
+
+@media (max-width: 599px) {
+
+    html {
+        font-size: 20px;
+        line-height: 2.9;
+        font-family: Krub, sans-serif;
+    }
+
+    span {
+        color: #d7c4b6;
+        font-family: Krub, "Georgia", sans-serif;
+        text-shadow: 2px 2px #666699;
+    }
+}
+
+@media (min-width: 600px) and (max-width:999px) {
+
+    html {
+        font-size: 25px;
+        line-height: 1.8;
+        font-family: Krub, sans-serif;
+    }
+
+    span {
+        color: #666699;
+        font-family: Krub, "Georgia", sans-serif;
+        text-shadow: 2px 2px #d7c4b6;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    * {
+        padding: 0.3rem;
+        margin: 0.3rem;
+        box-sizing: border-box;
+    }
+
+
+    html {
+        font-size: 30px;
+        line-height: 1.8;
+        font-family: Krub, sans-serif;
+    }
+
+    span {
+        color: #d7c4b6;
+        font-family: Krub, "Georgia", sans-serif;
+        text-shadow: 2px 2px #666699;
+    }
+
+}
+
+img {
+
+    padding: 1rem;
+    float: center;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
